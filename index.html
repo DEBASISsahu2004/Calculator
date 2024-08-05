@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="op-display"></div>
+            <div class="cal-display"></div>
+        </div>
+        <div class="buttons">
+            <button class="btn-op" onclick="clr()">AC</button>
+            <button class="btn-op" onclick="addOp('%')">%</button>
+            <button class="btn-op" onclick="del()">del</button>
+            <button class="btn-op" onclick="addOp('/')">/</button>
+            <button class="btn" onclick="addNum('7')">7</button>
+            <button class="btn" onclick="addNum('8')">8</button>
+            <button class="btn" onclick="addNum('9')">9</button>
+            <button class="btn-op" onclick="addOp('*')">x</button>
+            <button class="btn" onclick="addNum('4')">4</button>
+            <button class="btn" onclick="addNum('5')">5</button>
+            <button class="btn" onclick="addNum('6')">6</button>
+            <button class="btn-op" onclick="addOp('-')">-</button>
+            <button class="btn" onclick="addNum('1')">1</button>
+            <button class="btn" onclick="addNum('2')">2</button>
+            <button class="btn" onclick="addNum('3')">3</button>
+            <button class="btn-op" onclick="addOp('+')">+</button>
+            <button class="btn" onclick="addNum('00')">00</button>
+            <button class="btn" onclick="addNum('0')">0</button>
+            <button class="btn" onclick="addNum('.')">.</button>
+            <button class="btn-equal" onclick="result()">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
